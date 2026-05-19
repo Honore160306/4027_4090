@@ -50,6 +50,7 @@ in APPPATH/Controllers/DashboardController.php on line 31.
  6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
  7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
  8 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+<<<<<<< HEAD
 CRITICAL - 2026-05-19 11:05:50 --> ErrorException: Undefined variable $ressources
 [Method: GET, Route: admin/creneaux]
 in APPPATH/Views/admin/creneaux.php on line 58.
@@ -58,12 +59,49 @@ in APPPATH/Views/admin/creneaux.php on line 58.
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/CreneauxController.php(16): view()
+=======
+CRITICAL - 2026-05-19 11:05:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "adminCreneaux.php"
+[Method: GET, Route: admin/creneaux]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CreneauxController.php(19): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:06:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/admin/Creneaux.php"
+[Method: GET, Route: admin/creneaux]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/CreneauxController.php(19): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:19:41 --> ErrorException: Undefined property: stdClass::$places_dispo
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 99.
+ 1 APPPATH/Views/admin/creneaux.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(19): view()
+>>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8
  6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+<<<<<<< HEAD
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
 CRITICAL - 2026-05-19 11:08:20 --> ErrorException: Undefined variable $ressources
 [Method: GET, Route: admin/creneaux]
@@ -73,12 +111,24 @@ in APPPATH/Views/admin/creneaux.php on line 58.
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/CreneauxController.php(16): view()
+=======
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:22:14 --> ErrorException: Undefined property: stdClass::$places_dispo
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 99.
+ 1 APPPATH/Views/admin/creneaux.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(19): view()
+>>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8
  6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+<<<<<<< HEAD
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
 CRITICAL - 2026-05-19 11:14:51 --> ErrorException: Undefined variable $ressources
 [Method: GET, Route: admin/creneaux]
@@ -88,12 +138,24 @@ in APPPATH/Views/admin/creneaux.php on line 58.
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/CreneauxController.php(16): view()
+=======
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:29:31 --> ErrorException: Undefined array key "places_dispo"
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 99.
+ 1 APPPATH/Views/admin/creneaux.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(19): view()
+>>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8
  6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+<<<<<<< HEAD
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
 CRITICAL - 2026-05-19 11:16:02 --> ErrorException: Undefined variable $data
 [Method: GET, Route: admin/creneaux]
@@ -103,12 +165,24 @@ in APPPATH/Views/admin/creneaux.php on line 58.
  3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/CreneauxController.php(16): view()
+=======
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:30:57 --> ErrorException: Undefined array key "nombre_places"
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 99.
+ 1 APPPATH/Views/admin/creneaux.php(99): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(19): view()
+>>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8
  6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+<<<<<<< HEAD
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
 CRITICAL - 2026-05-19 12:31:28 --> ErrorException: Undefined variable $ressources
 [Method: POST, Route: ajoutCreneaux]
@@ -119,9 +193,55 @@ in APPPATH/Views/admin/creneaux.php on line 58.
  4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
  5 APPPATH/Controllers/CreneauxController.php(34): view()
  6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->ajoutCreneaux()
+=======
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:50:46 --> ErrorException: Undefined variable $creneaux
+[Method: GET, Route: creneaux]
+in APPPATH/Views/creneaux.php on line 45.
+ 1 APPPATH/Views/creneaux.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->creneaux()
+>>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8
  7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
  8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
  9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+<<<<<<< HEAD
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+=======
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:52:29 --> ErrorException: Undefined array key "lieu"
+[Method: GET, Route: creneaux]
+in APPPATH/Views/creneaux.php on line 54.
+ 1 APPPATH/Views/creneaux.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->creneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 12:06:51 --> ErrorException: Undefined array key "place_disponibles"
+[Method: GET, Route: creneaux]
+in APPPATH/Views/creneaux.php on line 58.
+ 1 APPPATH/Views/creneaux.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->creneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+>>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8

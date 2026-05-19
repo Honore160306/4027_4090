@@ -91,11 +91,12 @@
               <tr><th>Ressource</th><th>Date début</th><th>Date fin</th><th>Places dispo</th><th>Actif</th><th>Actions</th></tr>
             </thead>
             <tbody>
+              <?php foreach ($creneaux as $creneau) : ?>
               <tr>
-                <td class="td-name">Yoga Détente <span class="creneau-type type-cours" style="font-size:0.65rem;margin-left:5px;">Cours</span></td>
-                <td class="td-muted">16 juin · 08h00</td>
-                <td class="td-muted">16 juin · 09h30</td>
-                <td>6 / 10</td>
+                <td class="td-name"><?php echo $creneau['nom']; ?> <span class="creneau-type type-cours" style="font-size:0.65rem;margin-left:5px;">Cours</span></td>
+                <td class="td-muted"><?php echo $creneau['date_debut']; ?></td>
+                <td class="td-muted"><?php echo $creneau['date_fin']; ?></td>
+                <td><?php echo $creneau['place_dispo']; ?> / <?php echo $creneau['capacite']; ?></td>
                 <td><span class="badge-statut s-confirmee" style="font-size:0.68rem;">Oui</span></td>
                 <td>
                   <div class="action-btns">
@@ -104,32 +105,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td class="td-name">CrossFit Intensif <span class="creneau-type type-cours" style="font-size:0.65rem;margin-left:5px;">Cours</span></td>
-                <td class="td-muted">16 juin · 18h00</td>
-                <td class="td-muted">16 juin · 19h30</td>
-                <td>0 / 15</td>
-                <td><span class="badge-statut s-confirmee" style="font-size:0.68rem;">Oui</span></td>
-                <td>
-                  <div class="action-btns">
-                    <button class="btn-sm-custom btn-edit"><i class="bi bi-pencil"></i> Éditer</button>
-                    <button class="btn-sm-custom btn-del"><i class="bi bi-trash"></i></button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="td-name">Terrain squash A <span class="creneau-type type-terrain" style="font-size:0.65rem;margin-left:5px;">Terrain</span></td>
-                <td class="td-muted">18 juin · 14h00</td>
-                <td class="td-muted">18 juin · 15h00</td>
-                <td>1 / 2</td>
-                <td><span class="badge-statut s-confirmee" style="font-size:0.68rem;">Oui</span></td>
-                <td>
-                  <div class="action-btns">
-                    <button class="btn-sm-custom btn-edit"><i class="bi bi-pencil"></i> Éditer</button>
-                    <button class="btn-sm-custom btn-del"><i class="bi bi-trash"></i></button>
-                  </div>
-                </td>
-              </tr>
+              <?php endforeach; ?>
             </tbody>
           </table>
         </div>

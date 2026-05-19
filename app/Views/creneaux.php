@@ -42,76 +42,25 @@
     <div class="creneaux-grid">
 
       <!-- Créneau 1 — disponible -->
+      <?php foreach ($creneaux as $creneau) : ?>
       <div class="creneau-card">
         <div class="creneau-header">
-          <span class="creneau-type type-cours"><i class="bi bi-people-fill"></i> Cours</span>
-          <span style="font-size:0.75rem;color:var(--muted);">Lun 16 juin</span>
+          <span class="creneau-type type-cours" <?php echo $creneau['type'] === 'cours' ? 'style="color: var(--primary);"' : ''; ?>><i class="bi bi-people-fill"></i> Cours</span>
+          <span style="font-size:0.75rem;color:var(--muted);"><?php echo $creneau['date_debut']; ?></span>
         </div>
-        <p class="creneau-title">Yoga Détente</p>
+        <p class="creneau-title"><?php echo $creneau['nom']; ?></p>
         <div class="creneau-meta">
-          <div class="meta-row"><i class="bi bi-clock"></i> 08h00 — 09h30</div>
-          <div class="meta-row"><i class="bi bi-geo-alt"></i> Salle Zen · 2e étage</div>
+          <div class="meta-row"><i class="bi bi-clock"></i> <?php echo $creneau['date_debut']; ?> — <?php echo $creneau['date_fin']; ?></div>
+          <div class="meta-row"><i class="bi bi-geo-alt"></i> <?php echo $creneau['description']; ?></div>
         </div>
         <div>
           <div class="places-bar"><div class="places-fill" style="width:40%"></div></div>
-          <div class="places-label">6 places restantes sur 10</div>
+          <div class="places-label"><?php echo $creneau['place_dispo']; ?> places restantes sur <?php echo $creneau['capacite']; ?></div>
         </div>
         <a href="#" class="btn-reserver">Réserver ce créneau</a>
       </div>
+      <?php endforeach; ?>
 
-      <!-- Créneau 2 — complet -->
-      <div class="creneau-card full">
-        <div class="creneau-header">
-          <span class="creneau-type type-cours"><i class="bi bi-people-fill"></i> Cours</span>
-          <span style="font-size:0.75rem;color:var(--muted);">Lun 16 juin</span>
-        </div>
-        <p class="creneau-title">CrossFit Intensif</p>
-        <div class="creneau-meta">
-          <div class="meta-row"><i class="bi bi-clock"></i> 18h00 — 19h30</div>
-          <div class="meta-row"><i class="bi bi-geo-alt"></i> Salle Cross · RDC</div>
-        </div>
-        <div>
-          <div class="places-bar"><div class="places-fill" style="width:100%;background:var(--muted)"></div></div>
-          <div class="places-label">Complet — 0 place restante</div>
-        </div>
-        <button class="btn-reserver disabled" disabled>Complet</button>
-      </div>
-
-      <!-- Créneau 3 — salle -->
-      <div class="creneau-card">
-        <div class="creneau-header">
-          <span class="creneau-type type-salle"><i class="bi bi-door-open-fill"></i> Salle</span>
-          <span style="font-size:0.75rem;color:var(--muted);">Mar 17 juin</span>
-        </div>
-        <p class="creneau-title">Salle de musculation</p>
-        <div class="creneau-meta">
-          <div class="meta-row"><i class="bi bi-clock"></i> 10h00 — 12h00</div>
-          <div class="meta-row"><i class="bi bi-geo-alt"></i> Bloc Muscu · RDC</div>
-        </div>
-        <div>
-          <div class="places-bar"><div class="places-fill" style="width:25%"></div></div>
-          <div class="places-label">3 places restantes sur 4</div>
-        </div>
-        <a href="#" class="btn-reserver">Réserver ce créneau</a>
-      </div>
-
-      <!-- Créneau 4 — terrain -->
-      <div class="creneau-card">
-        <div class="creneau-header">
-          <span class="creneau-type type-terrain"><i class="bi bi-dribbble"></i> Terrain</span>
-          <span style="font-size:0.75rem;color:var(--muted);">Mer 18 juin</span>
-        </div>
-        <p class="creneau-title">Terrain de squash</p>
-        <div class="creneau-meta">
-          <div class="meta-row"><i class="bi bi-clock"></i> 14h00 — 15h00</div>
-          <div class="meta-row"><i class="bi bi-geo-alt"></i> Court A</div>
-        </div>
-        <div>
-          <div class="places-bar"><div class="places-fill" style="width:50%"></div></div>
-          <div class="places-label">1 place restante sur 2</div>
-        </div>
-        <a href="#" class="btn-reserver">Réserver ce créneau</a>
-      </div>
 
     </div>
   </div>
