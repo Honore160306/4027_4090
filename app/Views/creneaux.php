@@ -45,7 +45,7 @@
       <?php foreach ($creneaux as $creneau) : ?>
       <div class="creneau-card">
         <div class="creneau-header">
-          <span class="creneau-type type-cours" <?php echo $creneau['type'] === 'cours' ? 'style="color: var(--primary);"' : ''; ?>><i class="bi bi-people-fill"></i> Cours</span>
+          <span class="creneau-type type-cours">><i class="bi bi-people-fill"></i> <?php echo $creneau['type']; ?></span>
           <span style="font-size:0.75rem;color:var(--muted);"><?php echo $creneau['date_debut']; ?></span>
         </div>
         <p class="creneau-title"><?php echo $creneau['nom']; ?></p>
