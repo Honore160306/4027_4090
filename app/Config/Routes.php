@@ -18,4 +18,5 @@ $routes->get('/client/reservations', 'ReservationsController::reservations');
 
 $routes->get('/admin/reservations', 'ReservationsController::adminReservations');
 $routes->get('/admin/creneaux', 'CreneauxController::adminCreneaux');
+$routes->post('/ajoutCreneaux', 'CreneauxController::ajoutCreneaux');
 

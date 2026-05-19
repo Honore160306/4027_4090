@@ -49,28 +49,28 @@
         <!-- Formulaire ajout créneau -->
         <div class="form-section">
           <h3><i class="bi bi-plus-circle" style="color:var(--accent);margin-right:6px;"></i>Ajouter un créneau</h3>
-          <form>
+          <form action="/ajoutCreneaux" method="post">
             <div class="form-grid-2" style="margin-bottom:1rem;">
               <div class="form-group">
                 <label class="form-label">Ressource</label>
-                <select class="select-custom">
-                  <option>Salle Zen</option>
-                  <option>Salle Cross</option>
-                  <option>Terrain squash A</option>
-                  <option>Bloc Muscu</option>
+                  <select class="select-custom" name="ressource_id">
+                    <?php 
+                  foreach($ressources as $res) { ?>
+                    <option value= <?= $res['id'] ?>><?= $res['nom'] ?></option>
+                  <?php } ?>
                 </select>
               </div>
               <div class="form-group">
                 <label class="form-label">Nombre de places</label>
-                <input type="number" class="form-control" value="10" min="1" />
+                <input type="number" class="form-control" value="10" min="1" name="place_dispo"/>
               </div>
               <div class="form-group">
                 <label class="form-label">Date et heure de début</label>
-                <input type="datetime-local" class="form-control" value="2025-06-16T08:00" />
+                <input type="datetime-local" class="form-control" value="2025-06-16T08:00" name="date_debut"/>
               </div>
               <div class="form-group">
                 <label class="form-label">Date et heure de fin</label>
-                <input type="datetime-local" class="form-control" value="2025-06-16T09:30" />
+                <input type="datetime-local" class="form-control" value="2025-06-16T09:30" name="date_fin"/>
               </div>
             </div>
             <div style="display:flex;gap:10px;flex-wrap:wrap;">

@@ -50,3 +50,78 @@ in APPPATH/Controllers/DashboardController.php on line 31.
  6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
  7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
  8 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:05:50 --> ErrorException: Undefined variable $ressources
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 58.
+ 1 APPPATH/Views/admin/creneaux.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/honore/Bureau/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:08:20 --> ErrorException: Undefined variable $ressources
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 58.
+ 1 APPPATH/Views/admin/creneaux.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/honore/Bureau/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:14:51 --> ErrorException: Undefined variable $ressources
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 58.
+ 1 APPPATH/Views/admin/creneaux.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/honore/Bureau/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:16:02 --> ErrorException: Undefined variable $data
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 58.
+ 1 APPPATH/Views/admin/creneaux.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/honore/Bureau/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 12:31:28 --> ErrorException: Undefined variable $ressources
+[Method: POST, Route: ajoutCreneaux]
+in APPPATH/Views/admin/creneaux.php on line 58.
+ 1 APPPATH/Views/admin/creneaux.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/honore/Bureau/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->ajoutCreneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
