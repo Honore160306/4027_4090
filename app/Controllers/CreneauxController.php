@@ -17,10 +17,13 @@ class CreneauxController extends Controller
 
     public function adminCreneaux()
     {
-<<<<<<< HEAD
         $db = \Config\Database::connect();
         $query = $db->query('SELECT * FROM ressources');
-        $data['ressources'] = $query->getResultArray();
+        $query2 = $db->query("SELECT * FROM creneaux JOIN ressources ON creneaux.ressource_id = ressources.id");
+        $data = [
+            'ressources' => $query->getResultArray(),
+            'creneaux' => $query2->getResultArray()
+        ];
         return view('admin/creneaux', $data);        
     }
 
@@ -34,16 +37,14 @@ class CreneauxController extends Controller
             'place_dispo' => $this->request->getPost('place_dispo'),
             'actif' => 1
         ]);
-        
         $db = \Config\Database::connect();
         $query = $db->query('SELECT * FROM ressources');
-        $data['ressources'] = $query->getResultArray();
+        $query2 = $db->query("SELECT * FROM creneaux JOIN ressources ON creneaux.ressource_id = ressources.id");
+        $data = [
+            'ressources' => $query->getResultArray(),
+            'creneaux' => $query2->getResultArray()
+        ];
+
         return view('admin/creneaux', $data);    
-=======
-        $db = \config\Database::connect();
-        $query = $db->query("SELECT * FROM creneaux JOIN ressources ON creneaux.ressource_id = ressources.id");
-        $data['creneaux'] = $query->getResultArray(); 
-        return view('/admin/creneaux', $data);
->>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8
     }
 }

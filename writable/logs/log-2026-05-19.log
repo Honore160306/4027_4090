@@ -245,3 +245,29 @@ in APPPATH/Views/creneaux.php on line 58.
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
 >>>>>>> 0542ecaa524bfb13249e0867a30ef707e7dfd3d8
+CRITICAL - 2026-05-19 12:50:49 --> ErrorException: Undefined variable $creneaux
+[Method: GET, Route: admin/creneaux]
+in APPPATH/Views/admin/creneaux.php on line 94.
+ 1 APPPATH/Views/admin/creneaux.php(94): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/honore/Bureau/4027_4090/app/Views/admin/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(27): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->adminCreneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 12:55:14 --> ErrorException: Undefined variable $data
+[Method: POST, Route: ajoutCreneaux]
+in APPPATH/Controllers/CreneauxController.php on line 40.
+ 1 APPPATH/Controllers/CreneauxController.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->ajoutCreneaux()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/home/honore/Bureau/4027_4090/public/index.php')
