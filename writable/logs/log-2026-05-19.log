@@ -136,3 +136,48 @@ in APPPATH/Views/admin/creneaux.php on line 99.
 10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:50:46 --> ErrorException: Undefined variable $creneaux
+[Method: GET, Route: creneaux]
+in APPPATH/Views/creneaux.php on line 45.
+ 1 APPPATH/Views/creneaux.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->creneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 11:52:29 --> ErrorException: Undefined array key "lieu"
+[Method: GET, Route: creneaux]
+in APPPATH/Views/creneaux.php on line 54.
+ 1 APPPATH/Views/creneaux.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->creneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
+CRITICAL - 2026-05-19 12:06:51 --> ErrorException: Undefined array key "place_disponibles"
+[Method: GET, Route: creneaux]
+in APPPATH/Views/creneaux.php on line 58.
+ 1 APPPATH/Views/creneaux.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(240): include('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/app/Views/creneaux.php')
+ 3 SYSTEMPATH/View/View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/CreneauxController.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CreneauxController->creneaux()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH/rewrite.php(44): require_once('/home/joshua-hernandez/Bureau/4027_4090/4027_4090/public/index.php')
