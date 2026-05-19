@@ -1,7 +1,8 @@
 INSERT INTO users (nom, email, password, role) VALUES
 ('Honore', 'honore@gmail.com', 'honore', 'client'),
 ('Joshua', 'joshua@gmail.com', 'joshua', 'client'),
-('Marino', 'marino@gmail.com', 'marino', 'client');
+('Marino', 'marino@gmail.com', 'marino', 'client'),
+('Admin', 'admin@gmail.com', 'admin', 'admin');
 
 INSERT INTO ressources (nom, type, capacite, description) VALUES
 ('Yoga Detente', 'COURS', 10, 'Salle Zen · 2e étage'),
